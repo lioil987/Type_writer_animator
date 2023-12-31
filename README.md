@@ -18,7 +18,7 @@ The Dynamic Typewriter Effect is a JavaScript script that creates a visually eng
 1. Include the script in your HTML file:
 
    ```html
-   <script src="typewriter.js"></script>
+   <script src="js/main.js"></script>
    
 2. Ensure your HTML structure includes a container element for the text:
 
@@ -26,12 +26,11 @@ The Dynamic Typewriter Effect is a JavaScript script that creates a visually eng
    <div class="text">
       <span></span>
    </div>
-3. nitialize the typewriter effect:
+3. change words:
    ```JavaScript
-    var span = document.querySelector('div.text span');
+
     var words = ['test1', 'test2', 'test3'];
-    var current = '';
-    type();
+      
 
 
 # Customization
