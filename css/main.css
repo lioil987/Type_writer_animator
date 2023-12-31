@@ -1,0 +1,51 @@
+body {
+  font-family: tanha;
+  direction: ltr;
+  text-align: right;
+  overflow-x: hidden;
+  background-color: gray;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+div.text{
+  padding-left: 5rem;
+  font-size: 2rem;
+  font-family: cursive;
+  font-weight: bold;
+  display: flex;
+
+}
+
+div.text h2{
+  margin-right: 2rem;
+}
+
+
+div.text span{
+position: relative;
+padding-right: .5rem;
+}
+div.text span::before{
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 150%;
+  background-color: black;
+  right: 0;
+  top:-10%;
+  animation: blink 1s forwards;
+  -webkit-animation: blink 1s infinite step-end;
+}
+
+@keyframes blink {
+  0%{
+opacity: 0;
+  }
+  50%{
+opacity: 1;
+  }
+}
+
+
+
